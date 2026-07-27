@@ -1,1 +1,0 @@
-# NSRIT-PORTAL
