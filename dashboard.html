@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NSRIT Alumni Dashboard</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+/* Header */
+.header{
+    background:#c00000;
+    color:white;
+    padding:15px 30px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header h2{
+    font-size:28px;
+}
+
+.header button{
+    background:white;
+    color:#c00000;
+    border:none;
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:230px;
+    background:#ffffff;
+    position:fixed;
+    top:70px;
+    bottom:0;
+    box-shadow:2px 0 10px rgba(0,0,0,.2);
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    border-bottom:1px solid #ddd;
+}
+
+.sidebar ul li a{
+    display:block;
+    padding:18px;
+    text-decoration:none;
+    color:#333;
+    font-weight:bold;
+}
+
+.sidebar ul li a:hover{
+    background:#c00000;
+    color:white;
+}
+
+/* Main */
+
+.main{
+    margin-left:250px;
+    padding:30px;
+}
+
+.welcome{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    margin-bottom:25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+}
+
+.card h3{
+    color:#c00000;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#555;
+}
+
+.card:hover{
+    transform:scale(1.03);
+    transition:.3s;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h2>NSRIT Alumni Portal</h2>
+    <button onclick="location.href='login.html'">Logout</button>
+</div>
+
+<div class="sidebar">
+
+<ul>
+
+<li><a href="#">🏠 Dashboard</a></li>
+<li><a href="#">👤 My Profile</a></li>
+<li><a href="#">🎓 Alumni Directory</a></li>
+<li><a href="#">💼 Jobs & Internships</a></li>
+<li><a href="#">🤝 Mentorship</a></li>
+<li><a href="#">📅 Events</a></li>
+<li><a href="#">📢 Announcements</a></li>
+<li><a href="#">⚙ Settings</a></li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<div class="welcome">
+<h2>Welcome, Alumni!</h2>
+<p>Stay connected with NSRIT. Find alumni, explore career opportunities, attend events, and mentor students.</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>0</h3>
+<p>Registered Alumni</p>
+</div>
+
+<div class="card">
+<h3>120</h3>
+<p>Job Opportunities</p>
+</div>
+
+<div class="card">
+<h3>15</h3>
+<p>Upcoming Events</p>
+</div>
+
+<div class="card">
+<h3>350</h3>
+<p>Mentors Available</p>
+</div>
+
+<div class="card">
+<h3>40</h3>
+<p>Internships</p>
+</div>
+
+<div class="card">
+<h3>25</h3>
+<p>Announcements</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
